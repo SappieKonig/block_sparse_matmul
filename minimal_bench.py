@@ -49,7 +49,7 @@ def block_sparse_mm_kernel(
         a_tile = tl.load(A_ptrs)
         
         # Load B tile
-        data_col_start = (row_block_idx * occupancy + i) * block_n
+        data_col_start = (pid_n * occupancy + i) * block_n
         offs_b_k = tl.arange(0, block_k)
         offs_b_n = data_col_start + tl.arange(0, block_n)
         B_ptrs = B_data_ptr + offs_b_k[:, None] * stride_bk + offs_b_n[None, :] * stride_bn

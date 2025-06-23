@@ -11,4 +11,5 @@ dependencies = [
     "pandas>=2.3.0",
     "stanford-stk>=0.7.1",
     "torch>=2.7.1",
+    "tqdm>=4.67.1",
 ]

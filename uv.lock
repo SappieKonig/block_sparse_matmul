@@ -14,6 +14,7 @@ dependencies = [
     { name = "matplotlib" },
     { name = "numpy" },
     { name = "pandas" },
+    { name = "pytorch-block-sparse" },
     { name = "stanford-stk" },
     { name = "torch" },
     { name = "tqdm" },
@@ -25,6 +26,7 @@ requires-dist = [
     { name = "matplotlib", specifier = ">=3.10.3" },
     { name = "numpy", specifier = ">=2.3.0" },
     { name = "pandas", specifier = ">=2.3.0" },
+    { name = "pytorch-block-sparse", specifier = ">=0.1.2" },
     { name = "stanford-stk", specifier = ">=0.7.1" },
     { name = "torch", specifier = ">=2.7.1" },
     { name = "tqdm", specifier = ">=4.67.1" },
@@ -690,6 +692,12 @@ sdist = { url = "https://files.pythonhosted.org/packages/66/c0/0c8b6ad9f17a802ee
 wheels = [
     { url = "https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl", hash = "sha256:a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427", size = 229892 },
 ]
+
+[[package]]
+name = "pytorch-block-sparse"
+version = "0.1.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/23/98/f5a0c7c7a13319adaf852798ffbe711e6e45c224680876e94ce16cd89773/pytorch_block_sparse-0.1.2.tar.gz", hash = "sha256:ca4a5c1dde96ac01c007f209067b2bbaee311a8699eba1eef712faef7f97df1f", size = 82532 }
 
 [[package]]
 name = "pytz"
